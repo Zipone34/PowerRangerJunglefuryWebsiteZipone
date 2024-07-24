@@ -1,0 +1,478 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*Nav*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 90px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+ /* border-bottom: 2px solid rgba(255, 255, 255, 0.2);*/
+  z-index: 100;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: 0.5s;
+}
+.header:hover::before {
+  left: 100%;
+}
+.logo {
+  color: #fff;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+}
+.navbar a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 35px;
+  transition: 0.3s;
+  font-family: fantasy;
+  font-weight: 400;
+}
+
+#menu-icon {
+  font-size: 36px;
+  color: #fff;
+  display: none;
+} 
+/* BREAKPOINTS */
+
+.junglelogo{
+  width: 8%;
+  margin-left: 8%;
+}
+
+.claw1{
+  display: none;
+  width: 4%;
+  top:60%;
+  left:70%;
+  position: absolute;
+}
+.hover:hover .claw1{
+ display: inline;
+}
+
+.claw2{
+  display: none;
+  width: 4%;
+  position: absolute;
+  top:60%;
+  left: 75.6%;
+}
+.hover2:hover .claw2{
+ display: inline;
+}
+
+.claw3{
+  display: none;
+  width: 4%;
+  position: absolute;
+  top: 60%;
+  left: 82%;
+}
+.hover3:hover .claw3{
+  display: inline;
+}
+.claw4{
+  display: none;
+  width: 4%;
+  position: absolute;
+  top: 60%;
+  left: 90%;
+}
+
+.hover4:hover .claw4{
+  display: inline;
+}
+
+
+
+/*Nav*/
+
+
+/*Home*/
+.Home{
+  height: 100vh;
+  background-image: url("assets/2081855.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+.pages{
+  padding-top: 18%;
+  margin-left: 10%;
+}
+
+.Powerrangers{
+  margin-top: 10%;
+  margin-left: 15%;
+  width: 40%;
+  height: 70%;
+  filter: drop-shadow(10px 10px 15px rgba(1, 116, 53, 0.5));
+}
+.head{
+  color: #fff;
+  font-size: 90px;
+  font-family: fantasy;
+  font-weight: 500;
+}
+
+.btn{
+  margin-top: 10px;
+  padding: 10px;
+  width: 120px;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  font-weight: 300;
+  font-size: 20px;
+  font-family: fantasy;
+  background-color:#4e855e ;
+}
+.triangle-left{
+  width: 0;
+  height: 0;
+  position: absolute;
+  top:43%;
+  left: 4%;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 50px solid #088565;
+  animation: move-left-right 1s linear infinite;
+}
+.triangle-right{
+  width: 0;
+  height: 0;
+  position: absolute;
+  top:43%;
+  left: 41%;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 50px solid #088565;
+  animation: move-left-right2 1s linear infinite;
+}
+
+@keyframes move-left-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px); /* Adjust distance as needed */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes move-left-right2 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px); /* Adjust distance as needed */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/*Home*/
+
+/*About*/
+.About{
+  height: 100vh;
+  background-image: url("./assets/2081855.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+}
+
+.jungle{
+  margin-top: 213.3px;
+  width: 55%;
+  height: 70%;
+}
+.Junglefury{
+  margin-top: 18%;
+}
+.text-1{
+  color: #fff;
+  font-family: fantasy;
+  font-weight: 400;
+  font-size: 60px;
+}
+
+.text-2{
+  color: #fff;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+.moreinfo{
+  margin-top: 20px;
+  padding: 11px;
+  background-color:#4e855e;
+  border: none;
+  border-radius: 100px;
+  width: 140px;
+  color: #fff;
+  font-weight: 500;
+  font-family: fantasy;
+  font-size: 20px;
+}
+
+/*About*/
+
+
+
+
+.slider {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+  height: 100vh;
+
+  display: flex;
+  animation: slideAnimation 16s infinite;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+@keyframes slideAnimation {
+  0% { transform: translateX(0%); }
+  20% { transform: translateX(0%); }
+  25% { transform: translateX(-100%); }
+  45% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  70% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
+  95% { transform: translateX(-300%); }
+  100% { transform: translateX(0%); }
+}
+
+#slide1{
+  background-image: url("./assets/Forest-jungle-trees-path-green_3840x2160.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.skills {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border-radius: 10px;
+  /*box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);*/
+  backdrop-filter: blur(10px);
+}
+.A{
+  font-size: 25px;
+  font-family: fantasy;
+  font-weight: ;
+}
+.R{
+  font-size: 30px;
+  font-weight: 400;
+  font-family: fantasy;
+}
+
+.skills-bar {
+  padding: 25px 30px;
+}
+
+.skills-bar .bar {
+  margin: 25px 0;
+}
+
+.skills-bar .bar .info span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.skills-bar .bar .info {
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.skills-bar .bar .progress-line {
+  position: relative;
+  height: 10px;
+  width: 550px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line span {
+  position: absolute;
+  background: #25b79f;
+  height: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  text-transform: uppercase;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress-line .html {
+  width: 80%;
+}
+.progress-line .css {
+  width: 40%;
+}
+.progress-line .bootstrap {
+  width: 82%;
+}
+.progress-line .javascript {
+  width: 62%;
+}
+.progress-line .c {
+  width: 90%;
+}
+
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -14px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f0f0f0;
+  border-top-color: #07374a;
+}
+
+.bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #f0f0f0;
+  font-size: 12px;
+  font-weight: 700;
+  background: #aa0000;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+
+.progress-line .html::after {
+  content: "80%";
+}
+.progress-line .css::after {
+  content: "70%";
+}
+.progress-line .bootstrap::after {
+  content: "82%";
+}
+.progress-line .javascript::after {
+  content: "62%";
+}
+.progress-line .c::after {
+  content: "90%";
+}
+
+/* ////........Media Query........//// */
+
+@media (max-width: 700px) {
+    .skills{
+        width: 80%;
+    }
+
+    .skills-bar .bar .progress-line{
+        width: 100%;
+    }
+}      
+
+#slide2{
+  background-image: url("./assets/Forest-jungle-trees-path-green_3840x2160.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#slide3{
+  background-image: url("./assets/Forest-jungle-trees-path-green_3840x2160.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#slide4{
+  background-image: url("./assets/Forest-jungle-trees-path-green_3840x2160.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.red{
+  margin-top: 10%;
+  margin-right: 50%;
+  width: 15%;
+  height: 70%;
+}
+
+.yellow{
+  margin-top: 10%;
+  height: 70%;
+}
+
+.blue{
+  margin-top: 10%;
+  height: 70%;
+}
+.White{
+  margin-top: 10%;
+  height: 70%;
+}

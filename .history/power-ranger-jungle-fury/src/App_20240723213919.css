@@ -1,0 +1,1204 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*Nav*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 90px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+ /* border-bottom: 2px solid rgba(255, 255, 255, 0.2);*/
+  z-index: 100;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: 0.5s;
+}
+.header:hover::before {
+  left: 100%;
+}
+.logo {
+  color: #fff;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+}
+.navbar a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 35px;
+  transition: 0.3s;
+  font-family: fantasy;
+  font-weight: 400;
+}
+
+#menu-icon {
+  font-size: 36px;
+  color: #fff;
+  display: none;
+} 
+/* BREAKPOINTS */
+
+.junglelogo{
+  width: 10%;
+  margin-left: 8%;
+}
+
+.claw1{
+  display: none;
+  width: 4%;
+  top:60%;
+  left:70%;
+  position: absolute;
+}
+.hover:hover .claw1{
+ display: inline;
+}
+
+.claw2{
+  display: none;
+  width: 4%;
+  position: absolute;
+  top:60%;
+  left: 75.6%;
+}
+.hover2:hover .claw2{
+ display: inline;
+}
+
+.claw3{
+  display: none;
+  width: 4%;
+  position: absolute;
+  top: 60%;
+  left: 82%;
+}
+.hover3:hover .claw3{
+  display: inline;
+}
+.claw4{
+  display: none;
+  width: 4%;
+  position: absolute;
+  top: 60%;
+  left: 90%;
+}
+
+.hover4:hover .claw4{
+  display: inline;
+}
+.claw5{
+  display: none;
+  width: 4%;
+  position: absolute;
+  top: 60%;
+  left: 90%;
+}
+.hover5:hover{
+  display: ;
+}
+
+/*Nav*/
+
+
+/*Home*/
+.Home{
+  height: 100vh;
+  background-image: url("assets/2081855.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+.pages{
+  padding-top: 18%;
+  margin-left: 10%;
+}
+
+.Powerrangers{
+  margin-top: 10%;
+  margin-left: 15%;
+  width: 40%;
+  height: 70%;
+  filter: drop-shadow(10px 10px 15px rgba(1, 116, 53, 0.5));
+}
+.head{
+  color: #fff;
+  font-size: 90px;
+  font-family: fantasy;
+  font-weight: 500;
+}
+
+.btn{
+  margin-top: 10px;
+  padding: 10px;
+  width: 120px;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  font-weight: 300;
+  font-size: 20px;
+  font-family: fantasy;
+  background-color:#4e855e ;
+}
+.triangle-left{
+  width: 0;
+  height: 0;
+  position: absolute;
+  top:43%;
+  left: 4%;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 50px solid #088565;
+  animation: move-left-right 1s linear infinite;
+}
+.triangle-right{
+  width: 0;
+  height: 0;
+  position: absolute;
+  top:43%;
+  left: 44%;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 50px solid #088565;
+  animation: move-left-right2 1s linear infinite;
+}
+
+@keyframes move-left-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px); /* Adjust distance as needed */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes move-left-right2 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px); /* Adjust distance as needed */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/*Home*/
+
+/*About*/
+.About{
+  height: 100vh;
+  background-image: url("./assets/2081855.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+}
+
+.jungle{
+  margin-top: 213.3px;
+  width: 55%;
+  height: 70%;
+}
+.Junglefury{
+  margin-top: 18%;
+}
+.text-1{
+  color: #fff;
+  font-family: fantasy;
+  font-weight: 400;
+  font-size: 60px;
+}
+
+.text-2{
+  color: #fff;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+.moreinfo{
+  margin-top: 20px;
+  padding: 11px;
+  background-color:#4e855e;
+  border: none;
+  border-radius: 100px;
+  width: 140px;
+  color: #fff;
+  font-weight: 500;
+  font-family: fantasy;
+  font-size: 20px;
+}
+
+/*About*/
+
+
+
+
+.slider {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+  height: 100vh;
+  display: flex;
+  animation: slideAnimation 30s infinite;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+@keyframes slideAnimation {
+  0% { transform: translateX(0%); }
+  20% { transform: translateX(0%); }
+  25% { transform: translateX(-100%); }
+  45% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  70% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
+  90% { transform: translateX(-300%); }
+  95% { transform: translateX(-400%); }
+  99% { transform: translateX(-400%); }
+  100% { transform: translateX(0%); }
+}
+
+#slide1{
+  background-image: url("./assets/Forest-jungle-trees-path-green_3840x2160.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.skills {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border-radius: 10px;
+  /*box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);*/
+  backdrop-filter: blur(10px);
+}
+.A{
+  font-size: 30px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+.R{
+  font-size: 30px;
+  font-weight: 400;
+  font-family: fantasy;
+  margin-bottom: 30px;
+}
+.M{
+  font-size: 30px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+.bite{
+  width: 5%;
+}
+.J{
+  font-size: 30px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+.MM{
+  font-size: 30px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+.P{
+  font-size: 30px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+.skills-bar {
+  padding: 25px 30px;
+}
+
+.skills-bar .bar {
+  margin: 25px 0;
+}
+
+.skills-bar .bar .info span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.skills-bar .bar .info {
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.skills-bar .bar .progress-line {
+  position: relative;
+  height: 10px;
+  width: 550px;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line span {
+  position: absolute;
+  background: #aa0000;
+  height: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  text-transform: uppercase;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress-line .html {
+  width: 100%;
+}
+.progress-line .css {
+  width: 40%;
+}
+.progress-line .bootstrap {
+  width: 82%;
+}
+.progress-line .javascript {
+  width: 62%;
+}
+.progress-line .c {
+  width: 90%;
+}
+
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -14px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f0f0f0;
+  border-top-color: #aa0000;
+}
+
+.bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #f0f0f0;
+  font-size: 12px;
+  font-weight: 700;
+  background: #aa0000;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+
+.progress-line .html::after {
+  content: "100%";
+}
+.progress-line .css::after {
+  content: "70%";
+}
+.progress-line .bootstrap::after {
+  content: "82%";
+}
+.progress-line .javascript::after {
+  content: "62%";
+}
+.progress-line .c::after {
+  content: "90%";
+}
+
+/* ////........Media Query........//// */
+
+@media (max-width: 700px) {
+    .skills{
+        width: 80%;
+    }
+
+    .skills-bar .bar .progress-line{
+        width: 100%;
+    }
+}      
+
+#slide2{
+  background-image: url("./assets/Forest-jungle-trees-path-green_3840x2160.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#slide3{
+  background-image: url("./assets/Forest-jungle-trees-path-green_3840x2160.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#slide4{
+  background-image: url("./assets/Forest-jungle-trees-path-green_3840x2160.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#slide5{
+  background-image: url("./assets/Forest-jungle-trees-path-green_3840x2160.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.red{
+  margin-top: 10%;
+  margin-right: 50%;
+  width: 15%;
+  height: 70%;
+}
+
+.yellow{
+  margin-top: 10%;
+  margin-right: 50%;
+  height: 70%;
+}
+/*Yellow*/
+.skills1 {
+  position: absolute;
+  top: 60%;
+  left: 160%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  /*box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);*/
+}
+
+.A1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.M1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+.M11{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.W1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+
+.Y{
+  font-family: fantasy;
+  font-weight: 500;
+  font-size: 30px;
+  margin-bottom: 5%;
+}
+
+.skills-bar1 {
+  padding: 25px 30px;
+}
+
+.skills-bar1 .bar1 {
+  margin: 25px 0;
+}
+
+.skills-bar1 .bar1 .info span {
+  /*font-size: 1rem;*/
+  font-weight: 500;
+}
+
+.skills-bar1 .bar1 .info1 {
+  margin-bottom: 8px;
+}
+
+.skills-bar1 .bar1 .progress-line1 {
+  position: relative;
+  height: 10px;
+  width: 550px;
+  background: transparent;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar1 .progress-line1 span {
+  position: absolute;
+  background: #d5ec00;
+  height: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  text-transform: uppercase;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress-line1 .html1 {
+  width: 80%;
+}
+.progress-line1 .css1 {
+  width: 40%;
+}
+.progress-line1 .bootstrap1 {
+  width: 82%;
+}
+.progress-line1 .javascript1 {
+  width: 62%;
+}
+.progress-line1 .c1 {
+  width: 90%;
+}
+
+.bar1 .progress-line1 span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -14px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f0f0f0;
+  border-top-color: #9eaf03;
+}
+
+.bar1 .progress-line1 span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #f0f0f0;
+  font-size: 12px;
+  font-weight: 700;
+  background: #9eaf03;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+
+.progress-line1 .html1::after {
+  content: "80%";
+}
+.progress-line1 .css1::after {
+  content: "70%";
+}
+.progress-line1 .bootstrap1::after {
+  content: "82%";
+}
+.progress-line1 .javascript1::after {
+  content: "62%";
+}
+.progress-line1 .c1::after {
+  content: "90%";
+}
+
+/* ////........Media Query........//// */
+
+@media (max-width: 700px) {
+    .skills1{
+        width: 80%;
+    }
+
+    .skills-bar1 .bar1 .progress-line1{
+        width: 100%;
+    }
+}      
+/*Yellow*/
+
+/*Blue*/
+.blue{
+  margin-top: 10%;
+  margin-right: 50%;
+  height: 70%;
+}
+
+.skills2 {
+  position: absolute;
+  top: 50%;
+  left: 260%;
+  margin-top: 5%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  backdrop-filter: blur(10px);
+  /*box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);*/
+}
+
+.B{
+
+  font-size: 30px;
+  font-weight: 500;
+  font-family: fantasy;
+  margin-bottom: 5%;
+  color: #fff;
+}
+
+.A3{
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+.J3{
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+.W3{
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+.M3{
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+.skills-bar2 {
+  padding: 25px 30px;
+}
+
+.skills-bar2 .bar2 {
+  margin: 25px 0;
+}
+
+.skills-bar2 .bar2 .info2 span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.skills-bar2 .bar2 .info2 {
+  margin-bottom: 8px;
+}
+
+.skills-bar2 .bar2 .progress-line2 {
+  position: relative;
+  height: 10px;
+  width: 550px;
+  background: transparent;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar2 .progress-line2 span {
+  position: absolute;
+  background: #03506e;
+  height: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  text-transform: uppercase;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress-line2 .html2 {
+  width: 90%;
+}
+.progress-line2 .css2 {
+  width: 40%;
+}
+.progress-line2 .bootstrap2{
+  width: 82%;
+}
+.progress-line2 .javascript2 {
+  width: 62%;
+}
+.progress-line2 .c2 {
+  width: 90%;
+}
+
+.bar2 .progress-line2 span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -14px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f0f0f0;
+  border-top-color: #07374a;
+}
+
+.bar2 .progress-line2 span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #f0f0f0;
+  font-size: 12px;
+  font-weight: 700;
+  background: #032d3d;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+
+.progress-line2 .html2::after {
+  content: "90%";
+}
+.progress-line2 .css2::after {
+  content: "70%";
+}
+.progress-line2 .bootstrap2::after {
+  content: "82%";
+}
+.progress-line2 .javascript2::after {
+  content: "62%";
+}
+.progress-line2 .c2::after {
+  content: "90%";
+}
+
+/* ////........Media Query........//// */
+
+@media (max-width: 700px) {
+    .skills2{
+        width: 80%;
+    }
+
+    .skills-bar2 .bar2 .progress-line2{
+        width: 100%;
+    }
+}      
+
+
+/*Blue*/
+   
+
+.Violet{
+  margin-top: 10%;
+  margin-right: 50%;
+  height: 70%;
+}
+
+/*White*/
+.White{
+  margin-top: 10%;
+  margin-right: 50%;
+  height: 70%;
+}
+
+
+.skills3 {
+  position: absolute;
+  top: 50%;
+  left: 360%;
+  margin-top: 5%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  backdrop-filter: blur(10px);
+  /*box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);*/
+}
+.W7{
+  font-weight: 500;
+  font-family: fantasy;
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 5%;
+}
+.A4{
+  font-weight: 500;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  color: #fff;
+}
+.J4{
+  font-weight: 500;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  color: #fff;
+}
+
+.W77{
+  font-weight: 500;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  color: #fff;
+}
+
+.M4{
+  font-weight: 500;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  color: #fff;
+}
+
+.skills-bar3 {
+  padding: 25px 30px;
+}
+
+.skills-bar3 .bar3 {
+  margin: 25px 0;
+}
+
+.skills-bar3 .bar3 .info3 span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.skills-bar3 .bar3 .info3 {
+  margin-bottom: 8px;
+}
+
+.skills-bar3 .bar3 .progress-line3 {
+  position: relative;
+  height: 10px;
+  width: 550px;
+  background: transparent;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar3 .progress-line3 span {
+  position: absolute;
+  background: #fff;
+  height: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  text-transform: uppercase;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress-line3 .html3 {
+  width: 80%;
+}
+.progress-line3 .css3 {
+  width: 70%;
+}
+.progress-line3 .bootstrap3 {
+  width: 82%;
+}
+.progress-line3 .javascript3 {
+  width: 62%;
+}
+.progress-line3 .c3 {
+  width: 90%;
+}
+
+.bar3 .progress-line3 span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -14px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f0f0f0;
+  border-top-color: black;
+}
+
+.bar3 .progress-line3 span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #f0f0f0;
+  font-size: 12px;
+  font-weight: 700;
+  background: black;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+
+.progress-line3 .html3::after {
+  content: "80%";
+}
+.progress-line3 .css3::after {
+  content: "70%";
+}
+.progress-line3 .bootstrap3::after {
+  content: "82%";
+}
+.progress-line3 .javascript3::after {
+  content: "62%";
+}
+.progress-line3 .c3::after {
+  content: "90%";
+}
+
+/* ////........Media Query........//// */
+
+@media (max-width: 700px) {
+    .skills3{
+        width: 80%;
+    }
+
+    .skills-bar3 .bar3 .progress-line3{
+        width: 100%;
+    }
+}      
+/*White*/
+
+/*Violet*/
+.skills4 {
+  position: absolute;
+  top: 50%;
+  margin-top: 5%;
+  left: 460%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  backdrop-filter: blur(10px);
+  /*box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);*/
+}
+.V7{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: fantasy;
+  margin-bottom: 5%;
+}
+.A4{
+   color: #fff;
+   font-size: 30px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-weight: 500;
+}
+.M5{
+  color: #fff;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+
+
+}
+
+.J5{
+  color: #fff;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+.W88{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skills-bar4 {
+  padding: 25px 30px;
+}
+
+.skills-bar4 .bar4 {
+  margin: 25px 0;
+}
+
+.skills-bar4 .bar4 .info4 span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.skills-bar4 .bar4 .info4 {
+  margin-bottom: 8px;
+  color: #07374a;
+}
+
+.skills-bar4 .bar4 .progress-line4 {
+  position: relative;
+  height: 10px;
+  width: 550px;
+  background: transparent;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar4 .progress-line4 span {
+  position: absolute;
+  background: rgb(167, 0, 167);
+  height: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  text-transform: uppercase;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress-line4 .html4 {
+  width: 80%;
+}
+.progress-line4 .css4 {
+  width: 70%;
+}
+.progress-line4 .bootstrap4 {
+  width: 82%;
+}
+.progress-line4 .javascript4 {
+  width: 62%;
+}
+.progress-line4 .c4 {
+  width: 90%;
+}
+
+.bar4 .progress-line4 span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -14px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f0f0f0;
+  border-top-color: rgb(167, 0, 167);
+}
+
+.bar4 .progress-line4 span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #f0f0f0;
+  font-size: 12px;
+  font-weight: 700;
+  background: rgb(167, 0, 167);
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+
+.progress-line4 .html4::after {
+  content: "80%";
+}
+.progress-line4 .css4::after {
+  content: "70%";
+}
+.progress-line4 .bootstrap4::after {
+  content: "82%";
+}
+.progress-line4 .javascript4::after {
+  content: "62%";
+}
+.progress-line4 .c4::after {
+  content: "90%";
+}
+
+/* ////........Media Query........//// */
+
+@media (max-width: 700px) {
+    .skills4{
+        width: 80%;
+    }
+
+    .skills-bar4 .bar4 .progress-line4{
+        width: 100%;
+    }
+}      
+
+
+/*Violet*/
+
+
+
+
+/*Goals*/
+.Goals{
+  height: 100vh;
+  background-image: url("./assets/Forest-jungle-trees-path-green_3840x2160.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.helmets{
+  margin-top: 18%;
+  margin-left: 5%;
+  width: 45%;
+}
+
+
+/*Goals*/
